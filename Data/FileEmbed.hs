@@ -16,6 +16,10 @@
 -- top of your module:
 --
 -- > {-# LANGUAGE TemplateHaskell #-}
+--
+-- NOTE: In cabal projects you may need to add file names used as arguments here
+-- to the extra-source-files list in the cabal file in order for recompilation 
+-- detection to work properly. See [this cabal issue](https://github.com/haskell/cabal/issues/4746). 
 module Data.FileEmbed
     ( -- * Embed at compile time
       embedFile
